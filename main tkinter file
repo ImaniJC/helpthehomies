@@ -1,0 +1,47 @@
+from tkinter import *
+
+# main page
+root = Tk()
+
+
+# sets screen size
+root.geometry("1500x1000")
+
+# title of screen
+root.title("HelpTheHomies")
+
+# set window to one solid color
+root.configure(bg = '#8BCAD0')
+
+Label(root, text = 'GeeksforGeeks', font =(
+  'Verdana', 15)).pack(side = TOP, pady = 10)
+
+
+# text
+
+# myLabel1 = Label(root, text='hello world')
+# myLabel2 = Label(root, text='my name is Imani j coleman')
+
+# .pack = shove text in nearest available spot (easy way... no control)
+# myLabel.pack()
+
+# tkinter grid system
+# myLabel1.grid(row=0, column=0)
+# myLabel2.grid(row=1, column=5)
+
+# creating a button
+# padx and pady change size of a button (x and y access)
+
+#
+def myClick():
+    myLabel = Label(root, text="imani is a baddie")
+    myLabel.pack()
+    return
+# command runs the above function
+
+# figure out how to change color of background and text of button on mac
+myButton = Button(root, text="click", command=myClick, fg="blue",bg="blue")
+# # get a button to function
+myButton.pack()
+# allows program to continue looping
+root.mainloop()
