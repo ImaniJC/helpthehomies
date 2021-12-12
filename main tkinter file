@@ -1,6 +1,10 @@
 from tkinter import *
 from PIL import ImageTk, Image
 
+# paths for images in GUI
+pathtophoto1 = Image.open("/Users/imanicoleman/Downloads/shelter.gif")
+pathtophoto2 = Image.open("/Users/imanicoleman/Downloads/landscape.gif")
+pathtophoto3 = Image.open("/Users/imanicoleman/Downloads/food1.gif")
 # main page
 root = Tk()
 
@@ -28,7 +32,7 @@ photoimage = photo.subsample(1, 2)
 Button(root, image = photoimage,).place(x = 450, y= 250)
 
 
-def openNewWindow():
+def NewWindow():
     newWindow = Toplevel(root)
 
 # sets the title of the
@@ -40,16 +44,39 @@ def openNewWindow():
     newWindow.configure(bg = '#FFA500')
     Label(newWindow, text='Welcome to Help the Homies', bg = '#FFA500', font=(
     'Trajan Pro', 25)).pack(side=TOP, pady=10)
+# setting shelter image within the new window
+    image1 = ImageTk.PhotoImage(pathtophoto1)
+    panel1 = Label(newWindow, image=image1, width = 150, height = 150)
+    panel1.image = image1  # keep a reference
+    panel1.place(x=200, y=500)
+# setting landscape image
+    image2 = ImageTk.PhotoImage(pathtophoto2)
+    panel2 = Label(newWindow, image = image2, width= 1500, height =300)
+    panel2.image = image2
+    panel2.place(x=-5, y = 150)
+# setting food image
+    image3 = ImageTk.PhotoImage(pathtophoto3)
+    panel3 = Label(newWindow, image = image3, width = , height = )
 
 
 
-    # Label.place(x=450, y = 400)
+def openShelterwindow():
+    return
+
+
+
+
+
+
+
+
+
 
 # a button widget which will open a
 # new window on button click
-btn = Button(root,text="Tap to Begin",command=openNewWindow)
+main_page_btn = Button(root,text="Tap to Begin",command=NewWindow)
 
-btn.place(x=660, y= 600)
+main_page_btn.place(x=660, y= 600)
 
 
 
@@ -60,4 +87,4 @@ btn.place(x=660, y= 600)
 
 # allows program to continue looping
 if __name__ == "__main__":
-root.mainloop()
+    root.mainloop()
