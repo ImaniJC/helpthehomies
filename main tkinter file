@@ -1,4 +1,5 @@
 from tkinter import *
+from PIL import ImageTk, Image
 
 # main page
 root = Tk()
@@ -7,41 +8,56 @@ root = Tk()
 # sets screen size
 root.geometry("1500x1000")
 
+# Allow Window to be resizable
+root.resizable(width = True, height = True)
+
 # title of screen
 root.title("HelpTheHomies")
 
 # set window to one solid color
 root.configure(bg = '#8BCAD0')
 
-Label(root, text = 'GeeksforGeeks', font =(
-  'Verdana', 15)).pack(side = TOP, pady = 10)
+# main page text
+myLabel1 = Label(root, text='Help The Homies', bg = "#8BCAD0", padx = 100, pady = 50,width = 200)
+myLabel1.config(font = ("Courier", 44))
+myLabel1.pack()
+# Label(root, text = 'Help The Homies', font =('Alex Brush', 25)).pack(side = TOP, padx = 200, pady = 50)
+# img= Image.open("/Users/imanicoleman/Downloads/icon.png")
+photo = PhotoImage(file = "/Users/imanicoleman/Downloads/icon.gif")
+photoimage = photo.subsample(1, 2)
+Button(root, image = photoimage,).place(x = 450, y= 250)
 
 
-# text
+def openNewWindow():
+    newWindow = Toplevel(root)
 
-# myLabel1 = Label(root, text='hello world')
-# myLabel2 = Label(root, text='my name is Imani j coleman')
+# sets the title of the
+# Toplevel widget
+    newWindow.title("Main Screen")
 
-# .pack = shove text in nearest available spot (easy way... no control)
-# myLabel.pack()
+# sets the geometry of toplevel
+    newWindow.geometry("1500x1000")
+    newWindow.configure(bg = '#FFA500')
+    Label(newWindow, text='Welcome to Help the Homies', bg = '#FFA500', font=(
+    'Trajan Pro', 25)).pack(side=TOP, pady=10)
 
-# tkinter grid system
-# myLabel1.grid(row=0, column=0)
-# myLabel2.grid(row=1, column=5)
 
-# creating a button
-# padx and pady change size of a button (x and y access)
 
-#
-def myClick():
-    myLabel = Label(root, text="imani is a baddie")
-    myLabel.pack()
-    return
-# command runs the above function
+    # Label.place(x=450, y = 400)
+
+# a button widget which will open a
+# new window on button click
+btn = Button(root,text="Tap to Begin",command=openNewWindow)
+
+btn.place(x=660, y= 600)
+
+
+
+
 
 # figure out how to change color of background and text of button on mac
-myButton = Button(root, text="click", command=myClick, fg="blue",bg="blue")
-# # get a button to function
-myButton.pack()
+#myButton = Button(root, text="click", command=myClick, fg="blue",bg="blue")
+
 # allows program to continue looping
+if __name__ == "__main__":
 root.mainloop()
