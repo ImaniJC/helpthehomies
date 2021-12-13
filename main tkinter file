@@ -80,18 +80,57 @@ def NewWindow():
 # bottom text
     hotline_text = Label(newWindow, text = "Service Hotline: (800) 535-7252", bg ='#FFA500', font = ("Courier", 16))
     hotline_text.place(x= 570, y =750)
-
+# buttons to open up designated windows 
     shelter_page = Button(newWindow,text = "Places to stay")
     shelter_page.place(x=220, y = 650)
+    
+    food_page = Button(newWindow, text="Food Resources",font="Courier",command=Foodwindow)
+    food_page.place(x=500, y=700)
+
+    phone_page = Button(newWindow, text="Place a call",font="Courier",command=Phonewindow)
+    phone_page.place(x=100, y=700)
+
+    shelter_page = Button(newWindow, text="Shelters",font="Courier",command=Shelterwindow)
+    shelter_page.place(x=900, y=700)
+
+    resources_page = Button(newWindow, text="Looking for Additional Resources",font="Courier",command=Resourceswindow)
+    resources_page.place(x=1100, y=700)
+
+    # a button widget which will open a
+    # new window on button click
 
 
 
 def Shelterwindow():
-    shelter_window = Toplevel(NewWindow)
-    shelter_window.title("Shelter")
+    Shelterwindow = Toplevel(root)
+    Shelterwindow.title("Shelter")
+    Shelterwindow.geometry("1500x1000")
+    Shelterwindow.configure(bg='#FFA500')
+    Label(Shelterwindow, text='List of shelters', bg='#FFA500', font=(
+        'Courier', 25)).pack(side=TOP, pady=10)
 
+def Phonewindow():
+    Phonewindow = Toplevel(root)
+    Phonewindow.title("Phone")
+    Phonewindow.geometry("1500x1000")
+    Phonewindow.configure(bg='#FFA500')
+    Label(Phonewindow, text='Make a Call', bg='#FFA500', font=(
+        'Courier', 25)).pack(side=TOP, pady=10)
 
-
+def Foodwindow():
+    Foodwindow = Toplevel(root)
+    Foodwindow.title("Food")
+    Foodwindow.geometry("1500x1000")
+    Foodwindow.configure(bg='#FFA500')
+    Label(Foodwindow, text='Food Pantries', bg='#FFA500', font=(
+        'Courier', 25)).pack(side=TOP, pady=10)
+def Resourceswindow():
+    Resourceswindow = Toplevel(root)
+    Resourceswindow.title("Resources")
+    Resourceswindow.geometry("1500x1000")
+    Resourceswindow.configure(bg='#FFA500')
+    Label(Resourceswindow, text='Looking for Additional Resources?', bg='#FFA500', font=(
+        'Courier', 25)).pack(side=TOP, pady=10)
 
 
 # a button widget which will open a
