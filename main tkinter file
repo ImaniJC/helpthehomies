@@ -5,6 +5,8 @@ from PIL import ImageTk, Image
 pathtophoto1 = Image.open("/Users/imanicoleman/Downloads/shelter.gif")
 pathtophoto2 = Image.open("/Users/imanicoleman/Downloads/landscape.gif")
 pathtophoto3 = Image.open("/Users/imanicoleman/Downloads/food1.gif")
+pathtophoto4 = Image.open("/Users/imanicoleman/Downloads/resource.gif")
+pathtophoto5 = Image.open("/Users/imanicoleman/Downloads/resource.gif")
 # main page
 root = Tk()
 
@@ -46,9 +48,9 @@ def NewWindow():
     'Trajan Pro', 25)).pack(side=TOP, pady=10)
 # setting shelter image within the new window
     image1 = ImageTk.PhotoImage(pathtophoto1)
-    panel1 = Label(newWindow, image=image1, width = 150, height = 150)
+    panel1 = Label(newWindow, image=image1, width = 150, height = 150,  )
     panel1.image = image1  # keep a reference
-    panel1.place(x=200, y=500)
+    panel1.place(x=100, y=500)
 # setting landscape image
     image2 = ImageTk.PhotoImage(pathtophoto2)
     panel2 = Label(newWindow, image = image2, width= 1500, height =300)
@@ -56,17 +58,37 @@ def NewWindow():
     panel2.place(x=-5, y = 150)
 # setting food image
     image3 = ImageTk.PhotoImage(pathtophoto3)
-    panel3 = Label(newWindow, image = image3, width = , height = )
+    panel3 = Label(newWindow, image = image3, width = 150 , height =150)
+    panel3.image = image3
+    panel3.place(x= 500, y = 500)
+# setting Resource image
+#     image4 = ImageTk.PhotoImage(pathtophoto4)
+#     panel4 = Label(newWindow, image = image4, width = 150, height= 150)
+#     panel4.image = image4
+#     image4.place(x=500, y = 200)
+# setting phone image
+#     image5 = ImageTk.PhotoImage(image = pathtophoto5)
+#     panel5 = Label(newWindow, image = image5, width = 150, height = 150)
+#     panel5.image = image5
+#     image5.place(x = 500, y = 200)
+    
 
 
 
-def openShelterwindow():
-    return
+
+
+# bottom text
+    hotline_text = Label(newWindow, text = "Service Hotline: (800) 535-7252", bg ='#FFA500', font = ("Courier", 16))
+    hotline_text.place(x= 570, y =750)
+
+    shelter_page = Button(newWindow,text = "Places to stay")
+    shelter_page.place(x=220, y = 650)
 
 
 
-
-
+def Shelterwindow():
+    shelter_window = Toplevel(NewWindow)
+    shelter_window.title("Shelter")
 
 
 
