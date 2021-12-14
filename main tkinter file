@@ -7,6 +7,20 @@ pathtophoto2 = Image.open("/Users/imanicoleman/Downloads/landscape.gif")
 pathtophoto3 = Image.open("/Users/imanicoleman/Downloads/food1.gif")
 pathtophoto4 = Image.open("/Users/imanicoleman/Downloads/resource.gif")
 pathtophoto5 = Image.open("/Users/imanicoleman/Downloads/resource.gif")
+pathtophoto6 = Image.open("/Users/sweet/OneDrive/Documents/hope and a home.png")
+pathtophoto7 = Image.open("/Users/sweet/OneDrive/Documents/ccvn.jpeg")
+pathtophoto8 = Image.open("/Users/sweet/OneDrive/Documents/dash.png")
+pathtophoto9 = Image.open("/Users/sweet/OneDrive/Documents/Samaritan-Inns-Vaccination-Banner.jpg")
+pathtophoto10 = Image.open("/Users/sweet/OneDrive/Documents/Housing-and-Shelter-Landing-Banner.png") #adams emergency shelter
+pathtophoto11 = Image.open("/Users/sweet/OneDrive/Documents/coalition.png") #coalition for the homeless
+pathtophoto12 = Image.open("/Users/sweet/OneDrive/Documents/NCCF.jpeg") #new begging famliy shelter
+pathtophoto13 = Image.open("/Users/sweet/OneDrive/Documents/emeryhouse_program_large.jpg") #Emery Work Bay
+pathtophoto14 = Image.open("/Users/sweet/OneDrive/Documents/central misson union.jpeg")#Central Union Mission
+pathtophoto15 = Image.open("/Users/sweet/OneDrive/Documents/isaiah.png")#saiah House Day Program
+pathtophoto16= Image.open("/Users/sweet/OneDrive/Documents/georgetown-ministry-center.png") #Georgetown Ministry Center
+pathtophoto17= Image.open("/Users/sweet/OneDrive/Documents/christ housee.png") #Christ House
+pathtophoto18= Image.open("/Users/sweet/OneDrive/Documents/harriet tubman.png")#harriet tubman for women
+pathtophoto19= Image.open("/Users/sweet/OneDrive/Documents/801 east.jpg")#801 East Men's Shelter
 # main page
 root = Tk()
 
@@ -108,6 +122,141 @@ def Shelterwindow():
     Shelterwindow.configure(bg='#FFA500')
     Label(Shelterwindow, text='List of shelters', bg='#FFA500', font=(
         'Courier', 25)).pack(side=TOP, pady=10)
+        
+    myLabel2 = Label(Shelterwindow, text='We provide a directory of shelters that provide assistance to the homeless.')
+    myLabel2.config(font=("Courier", 10))
+    myLabel2.pack()
+    myLabel3 = Label(Shelterwindow,text='We do not directly provide aid ourselves, but provide local resources for you to find.')
+    myLabel3.config(font=("Courier", 10))
+    myLabel3.pack()
+
+    Shelterwindow.title("Shelter")
+    # using image.open function and PhotoImage function to open the spcified image and display on the screen
+    img = ImageTk.PhotoImage(pathtophoto6)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=100, y=500)
+    myLabel4 = Label(Shelterwindow,text='Hope , A Home \n 1236 Columbia Rd NW,\n Washington,DC 2001\n202 387-7091\n')
+    myLabel4.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel4.place(x=60, y=300)
+
+    img = ImageTk.PhotoImage(pathtophoto7)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=300, y=500)
+
+    myLabel5 = Label(Shelterwindow, text='The CCNV \n 425 2nd St NW,\n Washington,DC 2009 \n202 393-5792\n')
+    myLabel5.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel5.place(x=260, y=600)
+
+    img = ImageTk.PhotoImage(pathtophoto8)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=500, y=500)
+
+    myLabel6 = Label(Shelterwindow, text='DASH \n PO Box 91730,\n Washington,DC 20090 \n202 462-3274\n')
+    myLabel6.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel6.place(x=460, y=600)
+
+    img = ImageTk.PhotoImage(pathtophoto9)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=700, y=500)
+
+    myLabel6 = Label(Shelterwindow, text='Samaritanns INN \n 2523 14th St,\n Washington,DC 20009 \n202 667-8831\n')
+    myLabel6.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel6.place(x=660, y=600)
+
+    img = ImageTk.PhotoImage(pathtophoto10)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=900,y=500)
+
+    myLabel7 = Label(Shelterwindow,text='Adams Place Emergency Place  \n 2210 Adams Pl NE Ste 1,\n Washington,DC 20009 \nN/A\n')
+    myLabel7.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel7.place(x=860, y=600)
+
+
+    img = ImageTk.PhotoImage(pathtophoto11)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=1100,y=500)
+
+    myLabel7 = Label(Shelterwindow,text='Coalition For the Homeless \n 635 I St NE,\n Washington,DC 20002 \n(202) 727-2832\n')
+    myLabel7.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel7.place(x=1060, y=600)
+
+    img = ImageTk.PhotoImage(pathtophoto12)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=1300,y=500)
+
+    myLabel8 = Label(Shelterwindow,text='New Beginnings-Family Shelter \n 1448 Park Rd NW,\n Washington,DC 20010 \n(202) 332-1505\n')
+    myLabel8.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel8.place(x=1260, y=600)
+
+    img = ImageTk.PhotoImage(pathtophoto13)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=100,y=150)
+
+    myLabel9 = Label(Shelterwindow,text='Emery Work Bay \n 1725 Lincoln Rd NE,\n Washington,DC 20002 \n(202) 635-1041\n')
+    myLabel9.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel9.place(x=60, y=600)
+
+    img = ImageTk.PhotoImage(pathtophoto14)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=300, y=150)
+
+    myLabel10 = Label(Shelterwindow,text='Central Union Misson \n 65 Massachusetts Ave NW,\n Washington,DC 20002 \n(202) 745-7118\n')
+    myLabel10.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel10.place(x=260, y=300)
+
+    img = ImageTk.PhotoImage(pathtophoto15)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=500, y=150)
+
+    myLabel10 = Label(Shelterwindow,text='Isaiah House\n 75 Hanover Pl NW,\n Washington,DC 20001 \n(202) 797-8806\n')
+    myLabel10.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel10.place(x=460, y=300)
+
+    img = ImageTk.PhotoImage(pathtophoto16)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=700, y=150)
+
+    myLabel11 = Label(Shelterwindow,text='Georgetown Ministry Center\n 1041 Wisconsin Ave NW,\n Washington,DC 20007 \n(202) 338-8301\n')
+    myLabel11.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel11.place(x=660, y=300)
+
+    img = ImageTk.PhotoImage(pathtophoto17)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=900, y=150)
+
+    myLabel12 = Label(Shelterwindow,text='Christ House\n 1717 Columbia Rd NW,\n Washington,DC 20009 \n(202) 328-1100\n')
+    myLabel12.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel12.place(x=860, y=300)
+
+    img = ImageTk.PhotoImage(pathtophoto18)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=1100,y=150)
+
+    myLabel13 = Label(Shelterwindow,text='Harriet Tubman Women Shelter\n 1910 Massachusetts Ave SE ,\n Washington,DC 20003 \n(202) 795-9966\n')
+    myLabel13.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel13.place(x=1060, y=300)
+
+    img = ImageTk.PhotoImage(pathtophoto19)
+    panel2 = Label(Shelterwindow, image=img, width=150, height=150)
+    panel2.image = img
+    panel2.place(x=1300,y=150)
+
+    myLabel14 = Label(Shelterwindow,text='801 East Mens Shelter \n 2700 Martin Luther King Ave SE,\n Washington,DC 20032 \n(202) 561-4014\n')
+    myLabel14.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    myLabel14.place(x=1260, y=300)
 
 def Phonewindow():
     Phonewindow = Toplevel(root)
