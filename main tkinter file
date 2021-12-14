@@ -287,10 +287,45 @@ def Resourceswindow():
     img = ImageTk.PhotoImage(pathtophoto20)
     job = Label(Resourceswindow, image=img, width=180, height=180)
     job.image = img
-    job.place(x=100, y=200)
+    job.place(x=0, y=100)
+
+    img = ImageTk.PhotoImage(pathtophoto23)
+    martha = Label(Resourceswindow, image=img, width=180, height=180)
+    martha.image = img
+    martha.place(x=150, y=250)
+
+    img = ImageTk.PhotoImage(pathtophoto24)
+    text = Label(Resourceswindow, image=img, width=180, height=180)
+    text.image = img
+    text.place(x=0, y=350)
+
+    img = ImageTk.PhotoImage(pathtophoto25)
+    mtext = Label(Resourceswindow, image=img, width=180, height=180)
+    mtext.image = img
+    mtext.place(x=150, y=450)
+
+
+    jobLabel = Label(Resourceswindow,text='')
+    jobLabel.config(font=("Courier", 10), height=8, width=27, bg='#FFA500')
+    jobLabel.place(x=860, y=300)
 
     addd_text = Label(Resourceswindow, text="Health", bg='#FFA500', font=("Courier", 44))
     addd_text.place(x=600, y=100)
+    bb= Label(Resourceswindow, text="list of recovery centers", bg='#FFA500',font=("Courier", 12))
+    bb.place(x=600, y=150)
+
+
+    rLabel = Label(Resourceswindow,text='Hope Addiction Rehab Services\n 1300 Pennsylvania Ave NW #318\n (202) 629-0970')
+    rLabel.config(font=("Courier", 14), height=5, width=40, bg='#2630ff')
+    rLabel.place(x=500, y=450)
+
+    iLabel = Label(Resourceswindow,text='Inpatient Drug Rehab Center\n 5100 Wisconsin Ave NW Ste 307 \n (202) 618-9125')
+    iLabel.config(font=("Courier", 14), height=5, width=40, bg='#2630ff')
+    iLabel.place(x=500, y=550)
+
+    pLabel = Label(Resourceswindow,text='Aquila Recovery \n 5100 Wisconsin Ave NW Ste 307 \n (202) 618-9125)')
+    pLabel.config(font=("Courier", 14), height=5, width=40, bg='#2630ff')
+    pLabel.place(x=500, y=650)
 
     img = ImageTk.PhotoImage(pathtophoto21)
     health = Label(Resourceswindow, image=img, width=180, height=180)
@@ -299,6 +334,16 @@ def Resourceswindow():
 
     adddd_text = Label(Resourceswindow, text="Clothes", bg='#FFA500', font=("Courier", 44))
     adddd_text.place(x=1100, y=100)
+    btext = Label(Resourceswindow, text="list of clothing donation centers", bg='#FFA500', font=("Courier", 12))
+    btext.place(x=1100, y=150)
+
+    cLabel = Label(Resourceswindow, text='Suited for Change \n 1023 15th St NW Ste 601 \n (202)  293-0351)')
+    cLabel.config(font=("Courier", 14), height=5, width=40, bg='#2630ff')
+    cLabel.place(x=1000, y=450)
+
+    bLabel = Label(Resourceswindow, text='Marthas Table \n 2114 14th St NW \n (202) 328-6608')
+    bLabel.config(font=("Courier", 14), height=5, width=40, bg='#2630ff')
+    bLabel.place(x=1000, y=550)
 
     img = ImageTk.PhotoImage(pathtophoto22)
     clothing = Label(Resourceswindow, image=img, width=180, height=180)
