@@ -21,9 +21,13 @@ pathtophoto16= Image.open("/Users/sweet/OneDrive/Documents/georgetown-ministry-c
 pathtophoto17= Image.open("/Users/sweet/OneDrive/Documents/christ housee.png") #Christ House
 pathtophoto18= Image.open("/Users/sweet/OneDrive/Documents/harriet tubman.png")#harriet tubman for women
 pathtophoto19= Image.open("/Users/sweet/OneDrive/Documents/801 east.jpg")#801 East Men's Shelter
-pathtophoto20= Image.open("/Users/sweet/OneDrive/Documents/jobs.png") #job pic
+pathtophoto20= Image.open("/Users/sweet/OneDrive/Documents/martha table.jpg") #1 pic
 pathtophoto21= Image.open("/Users/sweet/OneDrive/Documents/health.jpeg")#health
 pathtophoto22= Image.open("/Users/sweet/OneDrive/Documents/clothes.jpeg")#clothing
+pathtophoto23= Image.open("/Users/sweet/OneDrive/Documents/th.jpeg")#2nd
+pathtophoto24= Image.open("/Users/sweet/OneDrive/Documents/hope.jpg") # 3nd resource photo
+pathtophoto25= Image.open("/Users/sweet/OneDrive/Documents/cloth.jpeg") #5th resource photo
+pathtophoto26= Image.open("/Users/sweet/OneDrive/Documents/ko.Jpeg")#4th
 # main page
 root = Tk()
 
