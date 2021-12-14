@@ -21,6 +21,9 @@ pathtophoto16= Image.open("/Users/sweet/OneDrive/Documents/georgetown-ministry-c
 pathtophoto17= Image.open("/Users/sweet/OneDrive/Documents/christ housee.png") #Christ House
 pathtophoto18= Image.open("/Users/sweet/OneDrive/Documents/harriet tubman.png")#harriet tubman for women
 pathtophoto19= Image.open("/Users/sweet/OneDrive/Documents/801 east.jpg")#801 East Men's Shelter
+pathtophoto20= Image.open("/Users/sweet/OneDrive/Documents/jobs.png") #job pic
+pathtophoto21= Image.open("/Users/sweet/OneDrive/Documents/health.jpeg")#health
+pathtophoto22= Image.open("/Users/sweet/OneDrive/Documents/clothes.jpeg")#clothing
 # main page
 root = Tk()
 
@@ -280,6 +283,28 @@ def Resourceswindow():
     Resourceswindow.configure(bg='#FFA500')
     Label(Resourceswindow, text='Looking for Additional Resources?', bg='#FFA500', font=(
         'Courier', 25)).pack(side=TOP, pady=10)
+        
+    img = ImageTk.PhotoImage(pathtophoto20)
+    job = Label(Resourceswindow, image=img, width=180, height=180)
+    job.image = img
+    job.place(x=100, y=200)
+
+    addd_text = Label(Resourceswindow, text="Health", bg='#FFA500', font=("Courier", 44))
+    addd_text.place(x=600, y=100)
+
+    img = ImageTk.PhotoImage(pathtophoto21)
+    health = Label(Resourceswindow, image=img, width=180, height=180)
+    health.image = img
+    health.place(x=600, y=200)
+
+    adddd_text = Label(Resourceswindow, text="Clothes", bg='#FFA500', font=("Courier", 44))
+    adddd_text.place(x=1100, y=100)
+
+    img = ImageTk.PhotoImage(pathtophoto22)
+    clothing = Label(Resourceswindow, image=img, width=180, height=180)
+    clothing.image = img
+    clothing.place(x=1100, y=200)
+
 
 
 # a button widget which will open a
